@@ -1,20 +1,17 @@
 <!-- Describe task in general -->
 
 <p>
-    Sum two passed ints  
-</p>
-
-<p style="text-align: center;">
-    <img  title="example" src="{{MEDIA}}example.png" alt="example" style="max-height: 83px"/>
+    Given {% if is_js %}an Array{% else %}a list{% endif %} of items, some of which may be duplicated, create and return a new {% if is_js %}Array{% else %}Iterable{% endif %} that is otherwise the same as <b class="code">items</b>, but only up to <b class="code">k</b> occurrences of each element are kept, and all occurrences of that element after those first <b class="code">k</b> are discarded. Note also the counterintuitive but still
+    completely legitimate edge case of <b class="code">k == 0</b> that has a well defined answer of an empty list!
 </p>
 
 <!-- Explain input and output values -->
 <p>
-    <strong>Input:</strong> Two arguments. Both are ints.
+    <strong>Input:</strong> {% if is_js %}An Array and a number{% else %}A list and an integer{% endif %}.
 </p>
 
 <p>
-    <strong>Output:</strong> Int. 
+    <strong>Output:</strong> {% if is_js %}An Array{% else %}List or another Iterable (tuple, iterator, generator){% endif %}. 
 </p>
 
 
@@ -23,20 +20,3 @@
 </p>
 
 <pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
-
-<!-- Here you can explain how it can be used in development -->
-<!-- The section is optional -->
-<p class="for_info_only">
-
-    <strong>How it’s used:</strong>
-    <i>(math is used everywhere)</i>
-</p>
-
-<!-- Here you can explain some constraints for input-->
-<!-- The section is optional -->
-<p>
-    <strong>Preconditions:</strong>
-    <ul>
-    <li><i>both given ints should be between -1000 and 1000</i></li>
-    </ul>
-</p>
