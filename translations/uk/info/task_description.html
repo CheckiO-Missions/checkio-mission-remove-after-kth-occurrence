@@ -1,21 +1,21 @@
 <!-- Describe task in general -->
 
 <p>
-    Даний {% if is_js %}масив{% else %}список{% endif %} елементів, деякі з яких можуть повторюватися, створи і поверни новий {% if is_js %}масив{% else %}ітеративний обєкт{% endif %}, який в цілому такий же, як <b class="code">items</b>, але лише не більше <b class="code">k</b> перших появ кожного елемента залишені в списку, а всі наступні не включені. Note also the counterintuitive but still completely legitimate edge case of <b class="code">k == 0</b> that has a well defined answer of an empty list!
+    Дано {% if is_js %}масив{% else %}список{% endif %} елементів, деякі з яких можуть повторюватися, створи і поверни новий {% if is_js %}масив{% else %}ітеративний об'єкт{% endif %}, який в цілому такий же, як <b class="code">items</b>, але лише не більше <b class="code">k</b> перших появ кожного елемента залишені, а всі наступні не включені. Зауваж також не зовсім інтуїтивно зрозумілий, але цілком виправданий випадок, коли <b class="code">k == 0</b>, який передбачає повернення порожнього об'єкта!
 </p>
 
 <!-- Explain input and output values -->
 <p>
-    <strong>Input:</strong> {% if is_js %}An Array and a number{% else %}A list and an integer{% endif %}.
+    <strong>Вхідні дані:</strong> {% if is_js %}Масив{% else %}Список{% endif %} і ціле число.
 </p>
 
 <p>
-    <strong>Output:</strong> {% if is_js %}An Array{% else %}An Iterable{% endif %}. 
+    <strong>Вихідні дані:</strong> {% if is_js %}Масив{% else %}Список або інший ітеративний об'єкт (кортеж, ітератор, генератор){% endif %}. 
 </p>
 
 
 <p>
-    <strong>Examples:</strong>
+    <strong>Приклади:</strong>
 </p>
 
 <pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
