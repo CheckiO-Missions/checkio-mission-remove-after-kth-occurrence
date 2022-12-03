@@ -1,8 +1,8 @@
 {% comment %}New initial code template{% endcomment %}
-{% block env %}from typing import Iterable{% endblock env %}
+{% block env %}from typing import Iterable, Any{% endblock env %}
 
 {% block start %}
-def remove_after_kth(items: list, k: int) -> Iterable:
+def remove_after_kth(items: list[Any], k: int) -> Iterable[Any]:
     # your code here
     return []
 {% endblock start %}
